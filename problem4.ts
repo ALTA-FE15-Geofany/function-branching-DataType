@@ -1,4 +1,6 @@
 function primeNumber(number: number): boolean {
+    let tempPrima = 0
+
     for (let i: number = 1; i <= number; i++) {
         if (number % i == 0) {
             tempPrima++
@@ -10,7 +12,6 @@ function primeNumber(number: number): boolean {
         return false
     }
 }
-let tempPrima = 0
 
 console.log(primeNumber(11))
 console.log(primeNumber(13))
